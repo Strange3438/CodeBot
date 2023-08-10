@@ -1,1 +1,57 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link href="exp4.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1><center>Student Registration Form</center></h1>
+    <form align="center" method="get" action="" autocomplete="on">
+      <div class="regform">
+        <div class="info">
+          <div>
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              required
+            /><br />
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required /><br />
+          </div>
+          <div>
+            <label for="email">E-Mail</label>
+            <input type="text" id="email" name="email" required /><br />
+          </div>
+        </div>
+        <div class="section">
+          <input type="radio" id="radio-button" name="section" required />
+          <label for="radio-button">CSECS</label>
+          <br />
+          <input type="radio" id="radio-button" name="section" required />
+          <label for="radio-button">AIML</label>
+          <br />
+          <input type="radio" id="radio-button" name="section" required />
+          <label for="radio-button">CSBS</label>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="text" id="password" name="password" required />
+        </div>
+        <div>
+          <label for="password">Confirm Password</label>
+          <input type="text" id="password" name="password" required />
+        </div>
+        <div>
+          <input type="checkbox" id="terms" required />
+          <label for="terms">I agree to the Terms & Conditions</label>
+        </div>
+        <input type="button" value="Submit" />
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+  </body>
+</html>
